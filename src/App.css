@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+
+:root {
+  --font: Jost, "sans-serif";
+  --font-sec: "DM Serif Display", "sans-serif";
+  --primary-1: #cda274;
+  --primary-2: #292f36;
+  --primary-3: #f4f0ec;
+}
+
+/* CONTAINER STYLES */
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 720px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 100% !important;
+    padding: 0 20px;
+  }
+}

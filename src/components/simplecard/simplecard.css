@@ -1,0 +1,55 @@
+.simple_card {
+  padding: 3rem 0;
+  width: 100%;
+  text-align: center;
+  transition: all 250ms;
+  border-radius: 30px;
+}
+
+.simple_card:hover {
+  background-color: #f4f0ec;
+}
+
+.simple_card h2 {
+  font-family: var(--font-sec);
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 31px;
+  color: #292f36;
+}
+.simple_card p {
+  margin: 3.5rem 1rem;
+  font-family: var(--font);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  color: #4d5053;
+}
+.simple_card a {
+  margin: 0 auto;
+  box-shadow: none;
+  width: 70%;
+}
+
+@media only screen and (max-width: 992px) {
+  .simple_card {
+    padding: 2rem 0;
+  }
+  .simple_card p {
+    font-size: 18px;
+    margin: 2rem 0;
+  }
+  .simple_card a {
+    font-size: 16px;
+    padding: 1rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .simple_card {
+    padding: 1.5rem;
+  }
+  .simple_card p {
+    font-size: 16px;
+    margin: 1rem 0;
+  }
+}

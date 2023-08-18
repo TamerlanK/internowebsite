@@ -1,0 +1,64 @@
+.ss_points {
+  display: flex;
+  padding: 0 4rem;
+  justify-content: space-between;
+}
+
+.ss_line {
+  border: 1px solid #cecece;
+}
+
+.ss_points_col {
+  padding: 1rem;
+}
+
+.ss_points_col h2 {
+  font-family: var(--font-sec);
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 63px;
+  letter-spacing: 0.02em;
+  color: var(--primary-2);
+  margin-bottom: 1rem;
+}
+
+.ss_points_col ol {
+  list-style-position: inside;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.ss_points_col ol li {
+  font-family: var(--font);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 59px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: #4d5053;
+}
+
+.ss_points_col ol li::marker {
+  font-family: var(--font-sec);
+
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 25px;
+  color: var(--primary-1);
+}
+
+@media only screen and (max-width: 992px) {
+  .ss_points {
+    flex-direction: column;
+    text-align: center;
+  }
+  .ss_points_col ol {
+    gap: 0;
+  }
+  .ss_points_col ol li {
+    line-height: 46px;
+  }
+  .ss_points_col h2 {
+    font-size: 40px;
+  }
+}

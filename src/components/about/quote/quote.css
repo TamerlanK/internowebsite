@@ -1,0 +1,51 @@
+
+
+.about__quote-container {
+  text-align: center;
+  padding: 5rem 0;
+  width: 80%;
+  margin-inline: auto;
+}
+
+.abot__quotation-mark {
+}
+
+.about__quote {
+  font-family: var(--font-secc);
+  font-size: 35px;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 44px;
+  letter-spacing: 0.02em;
+  color: var(--primary-2);
+  margin: 3rem 0;
+}
+
+.about__quote-author {
+  font-family: var(--font);
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0.01em;
+  color: #4d5053;
+}
+
+@media only screen and (max-width: 768px) {
+  .about__quote-container {
+    padding: 4rem 0;
+  }
+  .about__quote {
+    font-size: 28px;
+    margin: 2rem 0;
+    line-height: 33px;
+  }
+  .about__quote-author {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .about__quote-container {
+    width: 100%;
+  }
+}

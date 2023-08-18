@@ -1,0 +1,22 @@
+.servicesList_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .servicesList_container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .servicesList_container {
+    gap: 1rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .servicesList_container {
+    display: flex;
+    flex-direction: column;
+  }
+}

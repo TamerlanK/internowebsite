@@ -1,0 +1,9 @@
+export { default as Hero } from "./hero/Hero";
+export { default as Work } from "./work/Work";
+export { default as Aboutus } from "./aboutus/Aboutus";
+export { default as Testimonials } from "./testimonials/Testimonials";
+export { default as Clients } from "./clients/Clients";
+export { default as HomeProjects } from "./projects/HomeProjects";
+export { default as Counter } from "./counter/Counter";
+export { default as Articles } from "./articles/Articles";
+export { default as Contact } from "./contact/Contact";

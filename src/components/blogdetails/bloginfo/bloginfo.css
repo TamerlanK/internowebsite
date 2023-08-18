@@ -1,0 +1,144 @@
+.blog-details-wrapper {
+  display: flex;
+  gap: 3rem;
+  margin: 3rem 0;
+}
+
+.blog-info {
+  flex: 1 1 60%;
+}
+
+.blog-info h1 {
+  font-family: DM Serif Display;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 63px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #292f36;
+}
+
+.blog-info img {
+  margin: 2rem 0;
+  width: 100%;
+  object-fit: cover;
+}
+
+.blog-info .img-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & > p {
+    font-family: Jost;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #4d5053;
+  }
+}
+
+.blog-info .blog-text {
+  font-family: Jost;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: #4d5053;
+  margin: 2rem 0;
+}
+
+.blog-info .blog-quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+  border-radius: 50px;
+  background-color: #f4f0ec;
+  & img {
+    width: 75px;
+    object-fit: cover;
+  }
+  & p {
+    font-family: DM Serif Display;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #cda274;
+  }
+}
+
+.blog-info h2 {
+  font-family: DM Serif Display;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 63px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: var(--primary-2);
+  margin: 2rem 0;
+}
+
+.blog-info ol {
+  font-family: Jost;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: #4d5053;
+  & li {
+    margin: 1rem 0;
+    &::marker {
+      color: var(--primary-1);
+    }
+  }
+}
+
+.blog-footer {
+  display: flex;
+  justify-content: space-between;
+  .blog-footer-left {
+    display: flex;
+    align-items: center;
+    & p {
+      font-family: Jost;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 23px;
+      letter-spacing: 0.02em;
+      text-align: center;
+      border-radius: 10px;
+      padding: 1rem 1.5rem;
+    }
+    & p:first-child {
+      font-family: DM Serif Display;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 25px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    & p:nth-child(2) {
+      background-color: var(--primary-2);
+      color: white;
+    }
+  }
+  .blog-footer-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    & img {
+      width: 20px;
+      aspect-ratio: 1 / 1;
+      object-fit: contain;
+    }
+  }
+}

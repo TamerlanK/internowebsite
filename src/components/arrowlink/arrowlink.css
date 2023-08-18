@@ -1,0 +1,26 @@
+.arrowlink-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrowlink-component a {
+  display: block;
+  border-radius: 50%;
+  background-color: #f4f0ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.3rem;
+  transition: all 250ms;
+}
+
+.arrowlink-component a:hover {
+  background-color: #ece6df;
+}
+
+@media only screen and (max-width: 576px) {
+  .arrowlink-component a {
+    padding: 0.7rem;
+  }
+}

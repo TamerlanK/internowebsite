@@ -1,0 +1,107 @@
+.home__projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 6rem 0;
+}
+
+.home__projects__title {
+  text-align: center;
+}
+.home__projects__title h2 {
+  font-family: var(--font-sec);
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 63px;
+  letter-spacing: 0.02em;
+  color: #292f36;
+}
+.home__projects__title p {
+  font-family: var(--font);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0.01em;
+  color: #292f36;
+  margin-top: 1rem;
+}
+
+.home__projects__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 2rem;
+  column-gap: 4rem;
+}
+
+.home__single-project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.home__single-project__top {
+  width: 100%;
+  overflow: hidden;
+}
+.home__single-project__top img {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  transition: all 250ms;
+}
+.home__single-project__top img:hover {
+  transform: scale(1.05);
+}
+
+.home__single-project__bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.home__single-project__info h4 {
+  font-family: var(--font-sec);
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: var(--primary-2);
+}
+.home__single-project__info p {
+  font-family: var(--font);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: #4d5053;
+}
+
+@media only screen and (max-width: 768px) {
+  .home__projects__content {
+    grid-template-columns: 1fr;
+  }
+  .home__projects__title h2 {
+    font-size: 35px;
+  }
+  .home__projects__title p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .home__single-project__info h4 {
+    font-size: 21px;
+  }
+  .home__single-project__info p {
+    font-size: 18px;
+  }
+  .home__projects {
+    margin: 4rem 0;
+  }
+}

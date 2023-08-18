@@ -1,0 +1,30 @@
+.home__clients {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+.home__single-client {
+  flex: 0 0 20%;
+  padding: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.home__single-client img {
+  max-width: 100%;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .home__clients {
+    flex-direction: column;
+  }
+
+  .home__single-client {
+    flex: 0 0 100%;
+    margin-bottom: 1rem;
+  }
+}

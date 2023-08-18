@@ -1,0 +1,5 @@
+export { default as Quote } from './quote/Quote'
+export { default as Whatwedo } from './whatwedo/Whatwedo'
+export { default as Result } from './result/Result'
+export { default as Team } from './team/Team'
+export { default as Mailbox } from './mailbox/Mailbox'

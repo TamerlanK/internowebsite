@@ -1,0 +1,119 @@
+.home__testimonials {
+  margin: 3rem 0;
+  padding: 3rem;
+  background-color: #f4f0ec;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__testimonials h2 {
+  font-family: var(--font-sec);
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 63px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--primary-2);
+  margin-bottom: 2rem;
+}
+.home__testimonials__content {
+  display: flex;
+  gap: 3rem;
+  width: 100%;
+}
+
+.singe-testimonial {
+  width: 33.333%;
+  flex: 1;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 20px;
+}
+
+.single-testimonial-top {
+  display: flex;
+  gap: 1.5rem;
+}
+.single-testimonial-top img {
+  object-fit: contain;
+}
+
+.single-testimonial-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.single-testimonial-info h3 {
+  font-family: var(--font-sec);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0.01em;
+  color: var(--primary-2);
+}
+
+.single-testimonial-info p {
+  font-family: var(--font);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.01em;
+  color: #4d5053;
+}
+
+.single-testimonial-bottom {
+  font-family: var(--font);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 33px;
+  margin-top: 1.5rem;
+  color: #4d5053;
+}
+
+@media only screen and (max-width: 992px) {
+  .single-testimonial-top {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .single-testimonial-info {
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+  .single-testimonial-info h3 {
+    line-height: 24px;
+  }
+
+  .single-testimonial-info p {
+    line-height: 24px;
+    margin-top: 0.5rem;
+    font-size: 18px;
+    text-align: center;
+  }
+  .single-testimonial-bottom {
+    text-align: center;
+    line-height: 24px;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .home__testimonials__content {
+    flex-direction: column;
+  }
+  .singe-testimonial {
+    width: 100%;
+  }
+  .home__testimonials h2 {
+    font-size: 35px;
+  }
+  .home__testimonials{
+    padding: 1.5rem;
+  }
+}
